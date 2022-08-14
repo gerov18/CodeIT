@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+        CodeIT Store
+    </title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
+</head>
+<body>
+    <div class="topbar container">
+        <div class="logo col-2">
+            <h1><span>C</span>ode<span>IT</span></h1>
+            <h2>Store</h2>
+        </div>
+        <div class="nav-button">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="col-8 container">
+                <a class="nav-item active" aria-current="page" href="#">Home</a>
+                <div class="nav-dropdown">
+                    <a class="nav-item dropdown-switch" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      All Brands 
+                      <i class="fa-solid fa-angle-down dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Apple</a>
+                        <a class="dropdown-item" href="#">Samsung</a>
+                        <a class="dropdown-item" href="#">Huawei</a>
+                        <a class="dropdown-item" href="#">Xiaomi</a>
+                        <a class="dropdown-item" href="#">Sony</a>
+                    </div>
+                </div>
+                <a class="nav-item" href="#">Latest</a>
+                <a class="nav-item" href="#">Featured</a>
+                <a class="nav-item" href="#">About</a>
+                <a class="nav-item" href="#">Blog</a>
+                <a class="nav-item" href="#">Contact</a>
+                <button class="nav-item search-btn nav-link"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+          </nav>
+        <button class="shopping-cart col-2">
+            <div class=" cart-text">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <div>$<span class="total-price">0.00</span></div>
+            </div>
+            <div class="cart-container">
+                <div class="cart-counter">
+                    <span>0</span>
+                </div>
+            </div>
+        </button>
+          
+    </div>
+    <header>
+        <div class="header-container container">
+            <h1 class="header-title">My wishlist</h1>
+            <div class="header-address">
+                <a href="#">Home</a>
+                <i class="fa-solid fa-angle-right"></i>
+                <a href="#" class="header-active">Wishlist</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wishlist-container">
+            <div class="filter container">
+                <div class="filter-search col-5">
+                    <div class="search-icon">
+                    <i class="fa-solid fa-search"></i>
+                    </div>
+                    <input type="text" id="phone-filter" onkeyup="phoneFilter()" placeholder="Search">
+                </div>
+                <button class="clear-btn">
+                    Clear List
+                </button>
+            </div>
+            <div class="wishlist container row">
+                <div class="phone-container col-3"><div class="phone-item">
+                    <div class="phone-image">
+                        <img src="assets/img/phone_1.png" alt="phone-image">
+                        <div class="phone-overlay">
+                            <button>Remove from wishlist</button>
+                        </div>
+                    </div>
+                    <div class="phone-caption">
+                        <h1 class="phone-model">Huawei Mate S</h1>
+                        <div class="price-container">
+                            <h2 class="phone-price">$<span class="price">280.00</span></h2>
+                        </div>
+                    </div>
+                    <div class="phone-button-container">
+                        <button class="phone-button trash-button"><i class="fa-solid fa-trash-can"></i></button>
+                        <button class="phone-button add-to-cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div></div>
+                <div class="phone-container col-3"><div class="phone-item">
+                    <div class="phone-image">
+                        <img src="assets/img/phone_2.png" alt="phone-image">
+                        <div class="phone-overlay">
+                            <button>Remove from wishlist</button>
+                        </div>
+                    </div>
+                    <div class="phone-caption">
+                        <h1 class="phone-model">Xiaomi Mi4</h1>
+                        <div class="price-container">
+                            <h2 class="phone-price">$<span class="price">350.00</span></h2>
+                        </div>
+                    </div>
+                    <div class="phone-button-container">
+                        <button class="phone-button trash-button"><i class="fa-solid fa-trash-can"></i></button>
+                        <button class="phone-button add-to-cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div></div>
+                <div class="phone-container col-3"><div class="phone-item">
+                    <div class="phone-image">
+                        <img src="assets/img/phone_6.png" alt="phone-image">
+                        <div class="phone-overlay">
+                            <button>Remove from wishlist</button>
+                        </div>
+                    </div>
+                    <div class="phone-caption">
+                        <h1 class="phone-model">Huawei G8 4G</h1>
+                        <div class="price-container">
+                            <h2 class="phone-price">$<span class="price">280.00</span></h2>
+                        </div>
+                    </div>
+                    <div class="phone-button-container">
+                        <button class="phone-button trash-button"><i class="fa-solid fa-trash-can"></i></button>
+                        <button class="phone-button add-to-cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div></div>
+                <div class="phone-container col-3"><div class="phone-item">
+                    <div class="phone-image">
+                        <img src="assets/img/phone_7.png" alt="phone-image">
+                        <div class="phone-overlay">
+                            <button>Remove from wishlist</button>
+                        </div>
+                    </div>
+                    <div class="phone-caption">
+                        <h1 class="phone-model">Galaxy Core Prime</h1>
+                        <div class="price-container">
+                            <h2 class="phone-price">$<span class="price">399.00</span></h2>
+                        </div>
+                    </div>
+                    <div class="phone-button-container">
+                        <button class="phone-button trash-button"><i class="fa-solid fa-trash-can"></i></button>
+                        <button class="phone-button add-to-cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div></div>
+                <div class="phone-container col-3"><div class="phone-item">
+                    <div class="phone-image">
+                        <img src="assets/img/phone_8.png" alt="phone-image">
+                        <div class="phone-overlay">
+                            <button>Remove from wishlist</button>
+                        </div>
+                    </div>
+                    <div class="phone-caption">
+                        <h1 class="phone-model">iPhone 6s</h1>
+                        <div class="price-container">
+                            <h2 class="phone-price"><span class="price">280.00</span></h2>
+                        </div>
+                    </div>
+                    <div class="phone-button-container">
+                        <button class="phone-button trash-button"><i class="fa-solid fa-trash-can"></i></button>
+                        <button class="phone-button add-to-cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div></div>
+                <div class="phone-container col-3"><div class="phone-item">
+                    <div class="phone-image">
+                        <img src="assets/img/phone_4.png" alt="phone-image">
+                        <div class="phone-overlay">
+                            <button>Remove from wishlist</button>
+                        </div>
+                    </div>
+                    <div class="phone-caption">
+                        <h1 class="phone-model">Huawei Mate S</h1>
+                        <div class="price-container">
+                            <h2 class="phone-price">$<span class="price">280.00</span></h2>
+                        </div>
+                    </div>
+                    <div class="phone-button-container">
+                        <button class="phone-button trash-button"><i class="fa-solid fa-trash-can"></i></button>
+                        <button class="phone-button add-to-cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div></div>
+                <div class="phone-container col-3"><div class="phone-item">
+                    <div class="phone-image">
+                        <img src="assets/img/phone_5.png" alt="phone-image">
+                        <div class="phone-overlay">
+                            <button>Remove from wishlist</button>
+                        </div>
+                    </div>
+                    <div class="phone-caption">
+                        <h1 class="phone-model">iPhone Rose Gold</h1>
+                        <div class="price-container">
+                            <h2 class="phone-price">$<span class="price">280.00</span></h2>
+                            <h2 class="phone-price phone-price-old"> $649.00</h2>
+                        </div>
+                    </div>
+                    <div class="phone-button-container">
+                        <button class="phone-button trash-button"><i class="fa-solid fa-trash-can"></i></button>
+                        <button class="phone-button add-to-cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div></div>
+                <div class="phone-container col-3"><div class="phone-item">
+                    <div class="phone-image">
+                        <img src="assets/img/phone_2.png" alt="phone-image">
+                        <div class="phone-overlay">
+                            <button>Remove from wishlist</button>
+                        </div>
+                    </div>
+                    <div class="phone-caption">
+                        <h1 class="phone-model">Xiaomi Mi4</h1>
+                        <div class="price-container">
+                            <h2 class="phone-price">$350.00</h2>
+                        </div>
+                    </div>
+                    <div class="phone-button-container">
+                        <button class="phone-button trash-button"><i class="fa-solid fa-trash-can"></i></button>
+                        <button class="phone-button add-to-cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div></div>
+                <div class="phone-container col-3"><div class="phone-item">
+                    <div class="phone-image">
+                        <img src="assets/img/phone_8.png" alt="phone-image">
+                        <div class="phone-overlay">
+                            <button>Remove from wishlist</button>
+                        </div>
+                    </div>
+                    <div class="phone-caption">
+                        <h1 class="phone-model">iPhone 6s</h1>
+                        <div class="price-container">
+                            <h2 class="phone-price">$<span class="price">280.00</span></h2>
+                        </div>
+                    </div>
+                    <div class="phone-button-container">
+                        <button class="phone-button trash-button"><i class="fa-solid fa-trash-can"></i></button>
+                        <button class="phone-button add-to-cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div></div>
+                <div class="phone-container col-3"><div class="phone-item">
+                    <div class="phone-image">
+                        <img src="assets/img/phone_4.png" alt="phone-image">
+                        <div class="phone-overlay">
+                            <button>Remove from wishlist</button>
+                        </div>
+                    </div>
+                    <div class="phone-caption">
+                        <h1 class="phone-model">Huawei Mate S</h1>
+                        <div class="price-container">
+                            <h2 class="phone-price">$<span class="price">280.00</span></h2>
+                        </div>
+                    </div>
+                    <div class="phone-button-container">
+                        <button class="phone-button trash-button"><i class="fa-solid fa-trash-can"></i></button>
+                        <button class="phone-button add-to-cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div></div>
+            </div>
+        </div>
+    </main>
+    <div class="benefits container">
+        <div class="benefits-border container">
+            <div class="benefits-container container">
+                <div class="benefits-item col-3">
+                    <i class="fa-solid fa-thumbs-up benefits-icon"></i>
+                    <div class="benefits-item-caption">
+                        <h1>Full Warranty</h1>
+                        <h2>Read About Our Warranty</h2>
+                    </div>
+                </div>
+                <div class="benefits-item col-3">
+                    <i class="fa-solid fa-truck benefits-icon"></i>
+                    <div class="benefits-item-caption">
+                        <h1>Express Shipping</h1>
+                        <h2>Local & International Shipping</h2>
+                    </div>
+                </div>
+                <div class="benefits-item col-3">
+                    <i class="fa-solid fa-comment-dots benefits-icon"></i>
+                    <div class="benefits-item-caption">
+                        <h1>Mobile Blog</h1>
+                        <h2>Discuss Your Favourite Phone</h2>
+                    </div>
+                </div>
+                <div class="benefits-item col-3">
+                    <i class="fa-solid fa-headset benefits-icon"></i>
+                    <div class="benefits-item-caption">
+                        <h1>24/7 Support</h1>
+                        <h2>Get Full Support Via Chat</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-top container">
+            <div class="row container">
+                <div class="form-container col-8">
+                <h1 class="newsletter-caption col-4">
+                    Subscribe to latest smartphone news & great deals we offer
+                </h1>
+                <form class="newsletter col-7">
+<!--                    <form class="email">-->
+                        <input type="email" id="email" name="email" placeholder="ENTER YOUR EMAIL ADDRESS" class="col">
+                        <button class="email-submit" type="submit">
+                            <i class="fa-solid fa-envelope"></i>
+                        </button>
+                </form>
+                </div>
+
+            <div class="social col-4">
+                <a href="#" class="social-link">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fa-brands fa-google-plus-g"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright col-4">
+                    <h1>
+                    COPYRIGHT © 2015 CODEITSTORE ALL RIGHTS RESERVED.
+                    </h1>
+                </div>
+                <div class="cards">
+                    <img src="assets/img/card_2.png" alt="Visa Electron">
+                    <img src="assets/img/card_5.png" alt="Paypal">
+                    <img src="assets/img/card_3.png" alt="Mastercard">
+                    <img src="assets/img/card_1.png" alt="Maestro">
+                    <img src="assets/img/card_4.png" alt="Visa">
+                    <img src="assets/img/card_6.png" alt="Discover">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</body>
+</html>
